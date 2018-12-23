@@ -1,0 +1,166 @@
+.alert-error {
+  color: red;
+}
+
+body {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.logo img {
+  width: 80px;
+  margin-left: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  color: white;
+  background-color: #333;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.selectBox {
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 16px;
+  font-size: 16px;
+  width: 300px;
+  height: 40px;
+  padding: 2px;
+}
+
+.left-div,
+.right-div {
+  background-color: white;
+  flex: 1;
+}
+
+.left-div {
+  padding: 16px;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.borderbox {
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.7);
+}
+.contributorList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contributorTitle {
+  font-size: 16px;
+  color: black;
+  padding: 8px 16px 4px 16px;
+}
+.contributorTitle:hover {
+  color: rgb(29, 145, 223);
+  font-size: 17px;
+  transition: all 0.4s;
+}
+.contributorItem {
+  border-bottom: solid 1px rgba(44, 44, 44, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contributorImg {
+  width: 60px;
+  border-radius: 5px;
+  margin-right: 16px;
+}
+
+.contributorData {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.contributorData:hover {
+  color: rgb(29, 145, 223);
+  transition: all 0.4s;
+}
+
+.contributionsBox {
+  font-size: 16px;
+  padding: 4px 8px;
+  line-height: 1rem;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+}
+
+table {
+  table-layout: fixed;
+  color: rgb(0, 0, 0);
+}
+
+td {
+  vertical-align: top;
+  line-height: 30px;
+}
+
+td:first-child {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+td.title {
+  font-weight: bold;
+}
+
+#link {
+  color: black;
+  text-decoration: none;
+}
+
+#link:hover {
+  color: rgb(29, 145, 223);
+  font-size: 18px;
+  transition: all 0.4s;
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+  #container {
+    margin: 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .left-div {
+    margin: 0;
+  }
+}
